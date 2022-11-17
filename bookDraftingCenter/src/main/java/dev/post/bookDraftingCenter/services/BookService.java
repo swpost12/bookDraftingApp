@@ -19,7 +19,7 @@ public class BookService {
     @Autowired
     private BooksRepo br;
     final private Logger logger= LoggerFactory.getLogger(BookService.class);
-    private ModelMapper map=new ModelMapper();
+    private final ModelMapper map=new ModelMapper();
 
 
 
