@@ -50,16 +50,19 @@ public class CharacterService {
     }
 
     public Characters add(CharcterDto dto) throws MaxCharactersException {
-        List<Characters> charactersList=cr.findByBookId(dto.getBookId()).orElseThrow(()->{
-            throw new BookNotFound("did not find book");
+        Books book1=br.findById(dto.getBookId()).orElseThrow(()->{
+            throw new BookNotFound("did not find the book");
         });
-        if(!(charactersList.size()<=3)){
+        List<Characters> charactersList=book1.getCharactersList();
+        if(!(charactersList.size()<=2)){
             log.warn("max character reached");
             throw new MaxCharactersException("the book already has three characters");
         }
 
 
         Characters c=map.map(dto,Characters.class);
+
+
         Books book=br.getReferenceById(dto.getBookId());
         c.setBookId(book);
         log.info("added a new character "+c.getName());

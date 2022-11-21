@@ -39,9 +39,9 @@ public class BookController {
         }
     }
 
-    @GetMapping("/title")
+    @GetMapping("/{title}")
     @ResponseBody
-    Books getBookByTitle(@RequestParam String title) {
+    Books getBookByTitle(@RequestParam("title") String title) {
         try {
             return bookService.getByTitle(title);
         } catch (Exception e) {

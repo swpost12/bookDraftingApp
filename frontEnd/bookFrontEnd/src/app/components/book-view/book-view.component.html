@@ -1,0 +1,62 @@
+
+
+ <div class="table-responsive" *ngIf="!update">
+    <table class="table table-primary">
+        <thead>
+            <tr>
+
+                <th scope="col">Book Id</th>
+                <th scope="col">Book Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Plot</th>
+                <th scope="col">PageCount</th>
+                <th scope="col">Genre</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="" *ngFor="let book of BookList">
+                <td scope="row">{{book.id}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.plot}}</td>
+                <td>{{book.pageCount}}</td>
+                <td>{{book.genre}}</td>
+                <td> <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-primary" (click)="updateBook(book.id)">Update book</button>
+                </div></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="card text-start" *ngIf="update">
+ 
+  <div class="card-body">
+    <h4 class="card-title">Update section</h4>
+
+    <div>
+       
+        <input type="text" name="" id="" [(ngModel)]="title" placeholder="update title"><br>
+        <input type="text" name="" id=""[(ngModel)]="author" placeholder="update author"><br>
+        <div>New Page Count</div>
+        <input type="number" [(ngModel)]="pageCount" placeholder="newPageCount">
+       
+
+
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <textarea class="form-control" name="" id="" rows="3" [(ngModel)]="plot" ></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="saveChanges()">update</button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
