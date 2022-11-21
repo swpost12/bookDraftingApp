@@ -24,6 +24,7 @@ export class BookViewComponent implements OnInit {
   author:string="";
   plot: string="Update Plot"
   update:boolean=false
+  id:number=0;
   pageCount:Number=0;
   
 
@@ -31,8 +32,11 @@ export class BookViewComponent implements OnInit {
     console.log(id);
     let book=this.BookList.find(element=>id===element.id)
 
-    this.title=book?.title;
-    this.author=book?.author
+    this.title=book?.title!;
+    this.author=book?.author!;
+    this.plot=book?.plot!;
+    this.pageCount=book?.pageCount!;
+    this.id=book?.id!;
 
     this.update=true;
 
@@ -41,7 +45,7 @@ export class BookViewComponent implements OnInit {
   saveChanges(){
     this.update=false
   }
-
+ 
 
 
 }
