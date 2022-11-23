@@ -1,0 +1,62 @@
+
+<div class="card text-start" *ngIf="!addFlag">
+  
+  <div class="card-body">
+        <h1>adding new book</h1>
+        <input type="text" [(ngModel)]="title"><br>
+
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <textarea class="form-control" name="" id="" rows="3" [(ngModel)]="plot"></textarea>
+        </div>
+
+        <input type="text" [(ngModel)]="author"><br>
+        <input type="number" [(ngModel)]="pageCount"><br>
+        <input type="text" [(ngModel)]="genre"><br>
+        <a name="" id="" class="btn btn-primary" href="#" role="button" (click)="addbook()">add book</a>
+  </div>
+
+</div>
+
+
+
+<div class="card text-start" *ngIf="addFlag">
+  
+  <div class="card-body">
+    <h1>adding new character</h1>
+        <span>age</span>
+        <input type="text" [(ngModel)]="age"><br>
+        <span>name</span>
+        <input type="text" [(ngModel)]="name"><br>
+        <span>archtype</span>
+        <input type="text" [(ngModel)]="characterType"><br>
+        <span>book id number</span>
+        <input type="number" [(ngModel)]="bookId"><br>
+
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <textarea class="form-control" name="" id="" rows="3" [(ngModel)]="physicalDescriptions"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <textarea class="form-control" name="" id="" rows="3" [(ngModel)]="gear"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <textarea class="form-control" name="" id="" rows="3" [(ngModel)]="backStory"></textarea>
+        </div>
+
+        <button type="button" class="btn btn-primary"(click)="addCharacter()">save new character</button>
+
+       
+    
+  </div>
+
+
+</div>
+
+
+<div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" [(ngModel)]="addFlag">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+  </div>

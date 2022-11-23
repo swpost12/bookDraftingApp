@@ -9,12 +9,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookViewComponent } from './components/book-view/book-view.component';
 import { CharacterViewComponent } from './components/character-view/character-view.component';
+import { AddNewEntryComponent } from './components/add-new-entry/add-new-entry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookViewComponent,
-    CharacterViewComponent
+    CharacterViewComponent,
+    AddNewEntryComponent
   ],
   imports: [
     BrowserModule,

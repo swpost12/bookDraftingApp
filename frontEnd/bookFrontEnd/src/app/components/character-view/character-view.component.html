@@ -1,1 +1,83 @@
-<p>character-view works!</p>
+<div class="table-responsive">
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">bookId</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let char of charArray">
+                <td scope="row">{{char.id}}</td>
+                <td>{{char.name}}</td>
+                <td>{{char.bookId.id?char.bookId.id:char.bookId}}</td>
+                <td><button type="button" class="btn btn-primary" (click)="showDetails(char)">Show Details</button></td>
+                <td><button type="button" class="btn btn-primary" (click)="updateDetails(char)">Update Details</button></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="card text-start" *ngIf="showDetailsFlag">
+
+ 
+    <h4 class="card-title">{{characterDetails.name}}</h4>
+    <ul>
+        <li>Age: {{characterDetails.age}}</li>
+        <li>Archtype: {{characterDetails.characterType}}</li>
+    </ul>
+
+    <h6>Phyiscal description</h6>
+    <p>{{characterDetails.physicalDescriptions}}</p>
+
+    <h6>Gear</h6>
+    <p>{{characterDetails.gear}}</p>
+
+    <h6>BackStory</h6>
+    <p>{{characterDetails.backStory}}</p>
+
+    <button type="button" class="btn btn-primary" (click)="hideDetails()">Hide Details</button>
+</div>
+
+
+<div class="card text-start" *ngIf="updateFlag">
+  <div class="card-body">
+    <h4 class="card-title">Update character info </h4>
+
+    <div>
+        <span>name:</span>
+        <input type="text" [(ngModel)]="newName"><br>
+
+        <span>age:</span>
+        <input type="number" [(ngModel)]="newAge"><br>
+
+        <span>archtype:</span>
+        <input type="text" [(ngModel)]="newArchtype"><br>
+
+        <div class="mb-3">
+          <label for="" class="form-label">new physical Descriptions</label>
+          <textarea class="form-control"  rows="3" [(ngModel)]="newPhysicalDescription"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="" class="form-label">new Backstory</label>
+          <textarea class="form-control" rows="3" [(ngModel)]="newBackstory"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="" class="form-label">new gear</label>
+          <textarea class="form-control" rows="3" [(ngModel)]="newGear"></textarea>
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="saveChanges()">save</button>
+
+
+    </div>
+  </div>
+</div>
+
+
+

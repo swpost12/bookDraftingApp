@@ -35,6 +35,8 @@ public class CharacterService {
 
 
     public List<Characters> findAll(){
+
+
         return cr.findAll();
     }
 

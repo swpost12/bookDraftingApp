@@ -1,6 +1,7 @@
 package dev.post.bookDraftingCenter.models;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,6 +32,7 @@ public class Books {
     private String genre;
 
     @OneToMany( mappedBy = "bookId")
+    @JsonIgnore
     private List<Characters> charactersList;
 
 
