@@ -10,13 +10,17 @@ import { AppComponent } from './app.component';
 import { BookViewComponent } from './components/book-view/book-view.component';
 import { CharacterViewComponent } from './components/character-view/character-view.component';
 import { AddNewEntryComponent } from './components/add-new-entry/add-new-entry.component';
+import { NavComponentComponent } from './components/nav-component/nav-component.component';
+import { HomeComponentComponent } from './components/home-component/home-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookViewComponent,
     CharacterViewComponent,
-    AddNewEntryComponent
+    AddNewEntryComponent,
+    NavComponentComponent,
+    HomeComponentComponent
   ],
   imports: [
     BrowserModule,

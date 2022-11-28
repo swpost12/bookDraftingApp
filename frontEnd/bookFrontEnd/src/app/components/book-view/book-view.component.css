@@ -1,0 +1,25 @@
+#updateForm{
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 15px;
+    background-color: #fcf5e5;
+
+}
+#submitButtons{
+    margin: 0 auto;
+    margin: left 25px; 
+    text-align: center;
+}
+#submitButtons button{
+   
+    margin-left: 15px;
+
+}
+textarea{
+    width: 400px;
+}
+
+.card-body{
+    margin: 0 auto;
+    text-align: center;
+}

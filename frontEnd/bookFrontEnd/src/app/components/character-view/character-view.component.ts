@@ -85,6 +85,9 @@ export class CharacterViewComponent implements OnInit {
    
 
   }
+  hide(){
+    this.updateFlag=false
+  }
 
 
 

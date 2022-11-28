@@ -1,0 +1,28 @@
+ul{
+list-style: none;
+text-align: center;
+padding-left: 0px;
+border-top: 10px;
+border-bottom: 25px;
+border-style: solid;
+
+
+
+}
+
+li{
+    float: left;
+    margin-right: 25px;
+    background-color: rgb(120, 23, 199);
+    color: aliceblue;
+    border-radius: 5px;
+    
+    
+}
+
+li:hover{
+    background-color:darkmagenta;
+    cursor: pointer;
+    
+    
+}

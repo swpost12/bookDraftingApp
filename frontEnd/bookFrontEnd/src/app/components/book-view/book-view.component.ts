@@ -40,6 +40,7 @@ export class BookViewComponent implements OnInit {
   pageCount:number=0;
   genre:string=""
   
+  
 
   updateBook(id:number){
     console.log(id);
@@ -78,6 +79,11 @@ export class BookViewComponent implements OnInit {
 
 
 
+    this.update=false
+  }
+
+
+  stopUpdate(){
     this.update=false
   }
  

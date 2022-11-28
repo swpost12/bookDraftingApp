@@ -25,21 +25,25 @@
                 <td> <div class="d-grid gap-2">
                   <button type="button" class="btn btn-primary" (click)="updateBook(book.id)">Update book</button>
                 </div></td>
+                
             </tr>
         </tbody>
     </table>
 </div>
 
 
-<div class="card text-start" *ngIf="update">
+<div class="card text-start" *ngIf="update" id="updateForm">
  
   <div class="card-body">
     <h4 class="card-title">Update book id {{id}}</h4>
 
     <div>
-       
+
+        <div for="">Title: </div> 
         <input type="text" name="" id="" [(ngModel)]="title" placeholder="update title"><br>
+        <div for="">Author: </div>
         <input type="text" name="" id=""[(ngModel)]="author" placeholder="update author"><br>
+        <div>Genre</div>
         <input type="text" name="" id=""[(ngModel)]="genre">
         <div>New Page Count</div>
         <input type="number" [(ngModel)]="pageCount" placeholder="newPageCount">
@@ -47,16 +51,22 @@
 
 
         <div class="mb-3">
-          <label for="" class="form-label"></label>
+          <label for="" class="form-label">New plot</label>
           <textarea class="form-control" name="" id="" rows="3" [(ngModel)]="plot" ></textarea>
         </div>
-        <button type="button" class="btn btn-primary" (click)="saveChanges()">update</button>
-
+        <div id="submitButtons">
+          <button type="button" class="btn btn-primary" (click)="saveChanges()">update</button>
+          <button type="button" class="btn btn-primary" (click)="stopUpdate()">stop Update</button>
+        </div>
     </div>
 
   </div>
 
 </div>
+
+
+
+
 
 
 
