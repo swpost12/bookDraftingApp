@@ -1,0 +1,43 @@
+#readonly{
+    margin: 0 auto;
+    text-align: center;
+    width: 35%;
+    background-color: #fcf5e5;
+}
+
+#details{
+    margin: 0 auto;
+    text-align: center;
+}
+ul{
+    list-style: none;
+  
+}
+li{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#updateForm{
+    margin: 0 auto;
+    text-align: center;
+    width: 45%;
+    background-color: #fcf5e5;
+}
+
+#singleLineInput  {
+    text-align: right justify;
+    display: grid;
+    
+   
+}
+
+input{
+    margin-bottom: 15px;
+    width: 25%;
+
+}
+
+button{
+    margin-right: 5%;
+}

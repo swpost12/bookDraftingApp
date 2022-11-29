@@ -21,9 +21,10 @@
 </div>
 
 
-<div class="card text-start" *ngIf="showDetailsFlag">
+<div class="card text-start" *ngIf="showDetailsFlag" id="readonly">
 
- 
+
+  <div id="details">
     <h4 class="card-title">{{characterDetails.name}}</h4>
     <ul>
         <li>Age: {{characterDetails.age}}</li>
@@ -38,24 +39,26 @@
 
     <h6>BackStory</h6>
     <p>{{characterDetails.backStory}}</p>
-
+  </div>
     <button type="button" class="btn btn-primary" (click)="hideDetails()">Hide Details</button>
 </div>
 
 
-<div class="card text-start" *ngIf="updateFlag">
+<div class="card text-start" *ngIf="updateFlag" id="updateForm">
   <div class="card-body">
     <h4 class="card-title">Update character info </h4>
 
     <div>
-        <span>name:</span>
-        <input type="text" [(ngModel)]="newName"><br>
+      <div id="singleLineInput">
+          <span>name:</span>
+          <input type="text" [(ngModel)]="newName"><br>
 
-        <span>age:</span>
-        <input type="number" [(ngModel)]="newAge"><br>
+          <span>age:</span>
+          <input type="number" [(ngModel)]="newAge"><br>
 
-        <span>archtype:</span>
-        <input type="text" [(ngModel)]="newArchtype"><br>
+          <span>archtype:</span>
+          <input type="text" [(ngModel)]="newArchtype"><br>
+      </div>
 
         <div class="mb-3">
           <label for="" class="form-label">new physical Descriptions</label>

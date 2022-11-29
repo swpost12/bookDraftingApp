@@ -1,17 +1,33 @@
-2022-11-28 10:23:13.880  INFO 16776 --- [restartedMain] d.p.b.BookDraftingCenterApplication      : Starting BookDraftingCenterApplication using Java 17.0.4.1 on LAPTOP-25TAU1TV with PID 16776 (E:\revatureWork\projects\playGround\bookDraftingApp\bookDraftingCenter\build\classes\java\main started by anime in E:\revatureWork\projects\playGround\bookDraftingApp\bookDraftingCenter)
-2022-11-28 10:23:13.887  INFO 16776 --- [restartedMain] d.p.b.BookDraftingCenterApplication      : No active profile set, falling back to 1 default profile: "default"
-2022-11-28 10:23:13.935  INFO 16776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-11-28 10:23:13.937  INFO 16776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-11-28 10:23:14.540  INFO 16776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-11-28 10:23:14.605  INFO 16776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
-2022-11-28 10:23:15.209  INFO 16776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5001 (http)
-2022-11-28 10:23:15.223  INFO 16776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-11-28 10:23:15.223  INFO 16776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
-2022-11-28 10:23:15.329  INFO 16776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2022-11-28 10:23:15.331  INFO 16776 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1393 ms
-2022-11-28 10:23:15.525  INFO 16776 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-11-28 10:23:15.582  INFO 16776 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
-2022-11-28 10:23:15.762  INFO 16776 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-11-28 10:23:15.864  INFO 16776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-11-28 10:23:16.798  INFO 16776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-11-28 10:23:16.819  INFO 16776 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-29 11:20:20.776  INFO 17216 --- [restartedMain] d.p.b.BookDraftingCenterApplication      : Starting BookDraftingCenterApplication using Java 17.0.4.1 on LAPTOP-25TAU1TV with PID 17216 (E:\revatureWork\projects\playGround\bookDraftingApp\bookDraftingCenter\build\classes\java\main started by anime in E:\revatureWork\projects\playGround\bookDraftingApp\bookDraftingCenter)
+2022-11-29 11:20:20.784  INFO 17216 --- [restartedMain] d.p.b.BookDraftingCenterApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-11-29 11:20:20.842  INFO 17216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-29 11:20:20.844  INFO 17216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-29 11:20:21.418  INFO 17216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-29 11:20:21.491  INFO 17216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2022-11-29 11:20:22.211  INFO 17216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5001 (http)
+2022-11-29 11:20:22.222  INFO 17216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-29 11:20:22.222  INFO 17216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-29 11:20:22.326  INFO 17216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2022-11-29 11:20:22.327  INFO 17216 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1483 ms
+2022-11-29 11:20:22.547  INFO 17216 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-29 11:20:22.605  INFO 17216 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-29 11:20:22.783  INFO 17216 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-29 11:20:22.875  INFO 17216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-29 11:20:23.925  INFO 17216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-29 11:20:23.942  INFO 17216 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-11-29 11:20:24.589  INFO 17216 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-29 11:20:24.598  INFO 17216 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-29 11:20:25.115  WARN 17216 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-29 11:20:25.426  INFO 17216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-29 11:20:25.465  INFO 17216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5001 (http) with context path '/api'
+2022-11-29 11:20:25.473  INFO 17216 --- [restartedMain] d.p.b.BookDraftingCenterApplication      : Started BookDraftingCenterApplication in 5.052 seconds (JVM running for 10.489)
+2022-11-29 11:20:32.407  INFO 17216 --- [http-nio-5001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-29 11:20:32.407  INFO 17216 --- [http-nio-5001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-29 11:20:32.408  INFO 17216 --- [http-nio-5001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-11-29 12:10:26.351  WARN 17216 --- [http-nio-5001-exec-6] d.p.b.services.CharacterService          : max character reached
+2022-11-29 12:10:26.354  WARN 17216 --- [http-nio-5001-exec-6] d.p.b.advice.CharacterLimitReached       : the book already has three characters
+2022-11-29 12:10:26.356  WARN 17216 --- [http-nio-5001-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [dev.post.bookDraftingCenter.exceptions.MaxCharactersException: the book already has three characters]
+2022-11-29 12:10:33.285  INFO 17216 --- [http-nio-5001-exec-7] d.p.b.services.CharacterService          : added a new character charles
+2022-11-29 12:50:10.127  WARN 17216 --- [http-nio-5001-exec-9] d.p.b.services.CharacterService          : max character reached
+2022-11-29 12:50:10.127  WARN 17216 --- [http-nio-5001-exec-9] d.p.b.advice.CharacterLimitReached       : the book already has three characters
+2022-11-29 12:50:10.129  WARN 17216 --- [http-nio-5001-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [dev.post.bookDraftingCenter.exceptions.MaxCharactersException: the book already has three characters]

@@ -1,0 +1,20 @@
+#newBook{
+    margin: 0 auto;
+    text-align: center;
+    width: 45%;
+    background-color:  #fcf5e5;;
+}
+
+#newChar{
+
+    margin: 0 auto;
+    text-align: center;
+    width: 45%;
+    background-color:  #fcf5e5;;
+
+}
+
+#singleLine{
+    display: grid;
+    width: 25%;
+}
